@@ -47,12 +47,13 @@ h2 {
   margin-top:5%;
   margin-bottom:5%;
 }
-.label-float input: focus{
+.label-float input focus{
   border-bottom: 2px solid #404040;
 }
+
 .label-float label{
   color:#272262;
-  pointer-event:none;
+  pointer-events:none;
   position: absolute;
   top:0;
   left:0;
