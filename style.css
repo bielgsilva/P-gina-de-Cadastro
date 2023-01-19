@@ -6,7 +6,7 @@
   font-family: 'Roboto', sans-serify;
 }
 body {
-  background-image: url(https://i.imgur.com/1Pk9bat.jpg);
+  background-image: url(https://www.teahub.io/photos/full/234-2341488_praia-wallpaper-papel-de-parede-fundo-praia.jpg);
   background-repeat: no-repeat;
   background-size:cover;
   background-attachment: fixed;
@@ -19,7 +19,7 @@ body {
   margin-top: 100px;
 }
 .card{
-  background-color: #ffffff80;
+  background-color: #ffffffb6;
   padding:30px;
   border-radius: 20px;
   box-shadow: 3px 3px 1px 0px #00000080;
@@ -47,12 +47,12 @@ h2 {
   margin-top:5%;
   margin-bottom:5%;
 }
-.label-float input: focus{
+.label-float input:focus{
   border-bottom: 2px solid #404040;
 }
 .label-float label{
   color:#272262;
-  pointer-event:none;
+  pointer-events:none;
   position: absolute;
   top:0;
   left:0;
@@ -76,7 +76,7 @@ button{
 }
 button:hover{
   color: #fff;
-  background-color: blue;
+  background-color: #3dd1e2;
 }
 
 .justify-center{
