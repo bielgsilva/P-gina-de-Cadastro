@@ -17,13 +17,12 @@ olho.addEventListener('click', function () {
 //TROCAR DE TELAS
 const mudarTela = document.querySelector('.link')
 
-function mudandoTela() {
+mudarTela.addEventListener('click', function () {
 
-  document.querySelector(".card-login").style.display = "none";
-  document.querySelector(".card-cadastro").style.display = "block";
-}
+  window.location = '/pages/cadastro/index.html'
 
-mudarTela.onclick = mudandoTela;
+})
+
 
 
 /*VALIDACAO DE LOGIN*/
