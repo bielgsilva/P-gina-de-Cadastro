@@ -1,0 +1,202 @@
+.container{
+  display:flex;
+  justify-content:center;
+
+  width:100%;
+  margin-top: 100px;
+}
+
+.card-login, .card-cadastro{
+  padding:30px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 1px 0px #00000080;
+
+  background-color: #ffffffb6;
+}
+
+.icone-user{
+  display: flex;
+
+  margin-top: -70px;
+  margin-bottom: 20px;
+}
+
+.icone-user img{ 
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-bottom:20px;
+
+  text-align: center;
+}
+
+.label-float input{
+  display: inline-block;
+
+
+  width:100%;
+  padding: 5px 5px;
+  border: 0px;
+  border-bottom: 1px solid black;
+  border-radius:0;
+
+  outline: none;
+  font-size:16px;
+
+  background-color: transparent;
+
+  transition: all .3s ease-out;
+}
+
+.label-float{
+  position: relative;
+
+  padding-top: 15px;
+  margin-top:5%;
+  margin-bottom:5%;
+}
+
+.label-float input:focus{
+  border-bottom: 2px solid #404040;
+}
+
+.label-float label{
+  position: absolute;
+  top:0;
+  left:0;
+
+  pointer-events:none;
+  margin-top:15px;
+
+  color:#272262;
+
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus + label, 
+.label-float input:valid + label{
+  margin-top:0;
+
+  font-size:15px;
+}
+
+button{
+  margin-top: 15px;
+  padding: 10px 30px;
+  border-radius:10px;
+
+  font-weight: bold;
+  font-size: 15px;
+  cursor:pointer;
+
+  background-color: transparent;
+
+  transition: all .4s ease-out;
+}
+
+button:hover{
+  color: #fff;
+  background-color: #3dd1e2;
+}
+
+.justify-center{
+  display:flex;
+  justify-content: center;
+  
+}
+
+.remember-me{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+.remember-me input{
+  width: 15px;
+  height: 15px;
+}
+
+hr{
+  margin-top:5%;
+  margin-bottom: 10%;
+}
+
+.fa-eye{
+  position:absolute;
+
+  top:15px;
+  right:10px;
+  cursor:pointer;
+   
+}
+
+.beach-nav {
+  position: fixed;
+  top: 0;
+  left: -200px;
+
+  height: 100%;
+  width: 200px;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  
+  color: white;
+  background-color: #3dd1e2a8;
+  
+  transition: left 1s ease-in-out;
+}
+.beach-nav:hover {
+  left: 0;
+}
+.beach-nav a {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: block;
+}
+
+.beach-nav a:hover {
+  border-radius: 10px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  
+  transition: 0.2s ease-in-out;
+}
+
+.beach-nav a:active {
+  transform: translateY(2px);
+}
+
+
+.icon-nav {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+
+  width: 40px;
+  height: 40px;
+  background-image: url(/assets/icons/guarda-sol.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  transform: translateY(-50%);
+}
+
+.icon-link{
+  display: inline-block;
+
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+
+  background-image: url(./assets/icons/guarda-sol.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}

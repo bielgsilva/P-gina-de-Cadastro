@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding:0;
+  font-family: 'Roboto', sans-serify;
+}
+
+body {
+  background-image: url(https://www.teahub.io/photos/full/234-2341488_praia-wallpaper-papel-de-parede-fundo-praia.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  background-position: center;
+  }
