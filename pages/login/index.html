@@ -9,8 +9,6 @@
   <link rel="shortcut icon" href="https://png.pngtree.com/png-vector/20210606/ourmid/pngtree-waves-ocean-png-image_3418281.jpg
   " type="image/x-icon" />
 
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
-  <script type="text/javascript" src="../../js/api.js" defer>  </script>
   <script type="text/javascript" src="./script.js" defer>  </script>
 
 
@@ -18,6 +16,20 @@
 
 <body>
   <main>
+    <div class="modal hidden">
+      <div class="modal__body">
+        <!-- <img src="../../assets/icons/close-dark.svg" alt="Close" class="modal__close" /> -->
+        <h1>PARABÉNS!</h1>
+
+        <img src="https://64.media.tumblr.com/f4b883a994825e6ff5a28fc3448fc431/tumblr_nz7yzyTVAk1sfso15o3_500.gif"
+          alt="">
+        <span>Você concluiu a primeira parte da Tela de Login e Cadastro. <br> Novidades em breve...</span>
+      </div>
+    </div>
+
+
+
+
 
     <div class="beach-nav">
       <i class="icon-nav"></i>
@@ -50,11 +62,12 @@
             <label for='senha'> Senha </label>
             <i class="fa fa-eye" id="olho"></i>
           </div>
+          <span id='span-login' class="justify-center"></span>
+
           <div class='justify-center'>
             <button> Entrar &#128526</button>
           </div>
         </form>
-        <span></span>
         <a href='' style="font-size:15px"> Esqueci minha senha </a>
 
         <div class="remember-me">
@@ -68,10 +81,12 @@
         </div>
 
         <p> Não tem uma conta?
-          <a href='../cadastro/index.html' class="link">Cadastre-se</a>
+          <a href='../../index.html' class="link">Cadastre-se</a>
         </p>
 
-        <div>
+
+      </div>
+
 
   </main>
 </body>

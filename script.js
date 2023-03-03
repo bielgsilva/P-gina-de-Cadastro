@@ -16,13 +16,11 @@ olho.addEventListener('click', function () {
 //TROCAR DE TELAS
 const mudarTela = document.querySelector('.link')
 
-function mudandoTela() {
+mudarTela.addEventListener('click', function () {
 
-  document.querySelector(".card-login").style.display = "none";
-  document.querySelector(".card-cadastro").style.display = "block";
-}
+  window.location = '/pages/login/index.html'
 
-mudarTela.onclick = mudandoTela;
+})
 
 /*VALIDACAO DO FORM */
 const form = document.querySelector('.form-cadastro')
@@ -30,15 +28,18 @@ const form = document.querySelector('.form-cadastro')
 const userCadastro = document.querySelector('#usuario-cadastro')
 const emailCadastro = document.querySelector('#email-cadastro')
 const senhaCadastro = document.querySelector('#senha-cadastro')
-const spanLogin = document.querySelector('.card-cadastro span')
+const spanLogin = document.querySelector('#span-cadastro')
 
-async function registerUser() {
-  const response = await api.post('/usuarios', {
+let authenticatedUser = null;
+
+function registerUser() {
+  const user = {
     nome: userCadastro.value,
     email: emailCadastro.value,
     senha: senhaCadastro.value
-  })
-  console.log(response)
+  }
+  localStorage.setItem('user', JSON.stringify(user))
+  authenticatedUser = user
 }
 
 form.addEventListener('submit', (event) => {
@@ -50,6 +51,17 @@ form.addEventListener('submit', (event) => {
   }
 
   registerUser()
+  userCadastro.value = ''
+  emailCadastro.value = ''
+  senhaCadastro.value = ''
+  spanLogin.textContent = 'Cadastro efetuado com Sucesso'
 
 })
 
+// Para autenticar o usuário em outra parte do código, basta verificar se o usuário está salvo no localStorage
+// e armazenar na variável global authenticatedUser
+
+const savedUser = localStorage.getItem('user')
+if (savedUser) {
+  authenticatedUser = JSON.parse(savedUser)
+}
