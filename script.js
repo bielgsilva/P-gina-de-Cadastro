@@ -29,6 +29,7 @@ const userCadastro = document.querySelector('#usuario-cadastro')
 const emailCadastro = document.querySelector('#email-cadastro')
 const senhaCadastro = document.querySelector('#senha-cadastro')
 const spanLogin = document.querySelector('#span-cadastro')
+const spanLogin2 = document.querySelector('#span2-cadastro')
 
 let authenticatedUser = null;
 
@@ -54,7 +55,8 @@ form.addEventListener('submit', (event) => {
   userCadastro.value = ''
   emailCadastro.value = ''
   senhaCadastro.value = ''
-  spanLogin.textContent = 'Cadastro efetuado com Sucesso'
+  spanLogin.textContent = 'Cadastro efetuado com Sucesso!'
+  spanLogin2.textContent = 'Faça o Login clicando no link abaixo'
 
 })
 
