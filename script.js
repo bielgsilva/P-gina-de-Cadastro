@@ -18,7 +18,7 @@ const mudarTela = document.querySelector('.link')
 
 mudarTela.addEventListener('click', function () {
 
-  window.location = './page/login/index.html'
+  window.location = './pages/login/index.html'
 
 })
 
