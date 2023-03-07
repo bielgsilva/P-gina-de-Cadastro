@@ -18,7 +18,7 @@ const mudarTela = document.querySelector('.link')
 
 mudarTela.addEventListener('click', function () {
 
-  window.location.href = 'https://github.com/bielgsilva/Tela-de-Login/blob/main/pages/login/index.html'
+  window.location.href = 'https://github.com/bielgsilva/Tela-de-Login/pages/login/index.html'
 
 })
 
